@@ -14,5 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
         Aplicación diseñada por: MTI. Luis Alberto Balam Mukul
     </h2>
 
+    <img src="../web/img/lbm.png" alt="" >
+
     <code><?//= __FILE__ ?></code>
 </div>

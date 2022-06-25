@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Libro */
 
-$this->title = 'Create Libro';
+$this->title = 'Dar de alta un Libro';
 $this->params['breadcrumbs'][] = ['label' => 'Libros', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

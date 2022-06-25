@@ -38,7 +38,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             //['label' => 'Suma', 'url' => ['/sitio/inicio']],
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Inicio', 'url' => ['/site/index']],
 
             (!Yii::$app->user->isGuest) ?( // si es un invitado (es decir si esta logueado con una cuenta válida)
             ['label' => 'Libros', 'url' => ['/libro/index']]) //muestra la opción en el menú, de lo contrario
@@ -51,16 +51,16 @@ AppAsset::register($this);
             :("") //no muestres la opción (mostrará un espacio)
             ,
 */
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Acerca de', 'url' => ['/site/about']],
+            ['label' => 'Contáctanos', 'url' => ['/site/contact']],
             
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+                ['label' => 'Loguearse', 'url' => ['/site/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
                 . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    'Cerrar Sesión (' . Yii::$app->user->identity->username . ')',
                     ['class' => 'btn btn-link logout']
                 )
                 . Html::endForm()

@@ -4,7 +4,7 @@ use yii\widgets\LinkPager;
 
 ?>
 
-<h1> Libros a la venta </h1>
+<h1> Libros en Existencia </h1>
 <div class="row">
     
 <?php foreach($libros as $libro): ?>
